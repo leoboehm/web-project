@@ -14,7 +14,7 @@
     </v-row>
 
     <!-- Popular Categories -->
-    <v-row>
+    <v-row class="my-10">
       <v-col cols="12">
         <h2 class="text-center my-5">Popular Categories</h2>
       </v-col>
@@ -29,10 +29,16 @@
           <v-card-title>{{ category.name }}</v-card-title>
         </v-card>
       </v-col>
+      <v-row class="my-5" justify="center">
+        <v-btn size="x-large"
+          ><v-icon class="mr-2">mdi-arrow-right</v-icon>Explore all
+          Categories</v-btn
+        >
+      </v-row>
     </v-row>
 
-    <!-- Features Section -->
-    <v-row class="features-section my-10">
+    <!-- Features -->
+    <v-row class="features my-10">
       <v-col cols="12" md="4" v-for="feature in features" :key="feature.title">
         <v-icon color="primary">{{ feature.icon }}</v-icon>
         <h3>{{ feature.title }}</h3>
@@ -90,7 +96,7 @@ export default {
   background: linear-gradient(135deg, #3f51b5, #1e88e5);
   color: white;
   padding: 40px 0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
 }
 .category-card {
   transition: transform 0.2s;
@@ -98,7 +104,7 @@ export default {
 .category-card:hover {
   transform: scale(1.05);
 }
-.features-section {
+.features {
   text-align: center;
 }
 </style>
