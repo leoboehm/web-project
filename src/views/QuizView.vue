@@ -4,4 +4,21 @@
   </div>
 </template>
 
-<style></style>
+<script>
+import { useQuestionStore } from '@/store/QuestionStore'
+
+export default {
+  name: 'QuizView',
+
+  data() {
+    return {
+      questionStore: undefined,
+    }
+  },
+
+  async beforeMount() {
+    this.questionStore = useQuestionStore()
+    await this.questionStore.actionFetchAllQuestions()
+  },
+}
+</script>

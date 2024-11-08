@@ -35,13 +35,13 @@
     </v-row>
 
     <!-- Features -->
-    <v-row class="features my-10">
+    <!-- <v-row class="features my-10">
       <v-col cols="12" md="4" v-for="feature in features" :key="feature.title">
         <v-icon color="primary">{{ feature.icon }}</v-icon>
         <h3>{{ feature.title }}</h3>
         <p>{{ feature.description }}</p>
       </v-col>
-    </v-row>
+    </v-row> -->
   </v-container>
 </template>
 
@@ -53,23 +53,23 @@ export default {
     return {
       questionStore: undefined,
       categories: [],
-      features: [
-        {
-          icon: 'mdi-trophy',
-          title: 'Earn Points',
-          description: 'Collect points and climb the leaderboard!',
-        },
-        {
-          icon: 'mdi-lightbulb',
-          title: 'Learn & Improve',
-          description: 'Explanations after each question help you grow.',
-        },
-        {
-          icon: 'mdi-account-multiple',
-          title: 'Challenge Friends',
-          description: 'Invite friends and compete in live quizzes.',
-        },
-      ],
+      // features: [
+      //   {
+      //     icon: 'mdi-trophy',
+      //     title: 'Earn Points',
+      //     description: 'Collect points and climb the leaderboard!',
+      //   },
+      //   {
+      //     icon: 'mdi-lightbulb',
+      //     title: 'Learn & Improve',
+      //     description: 'Explanations after each question help you grow.',
+      //   },
+      //   {
+      //     icon: 'mdi-account-multiple',
+      //     title: 'Challenge Friends',
+      //     description: 'Invite friends and compete in live quizzes.',
+      //   },
+      // ],
     }
   },
 
@@ -78,7 +78,7 @@ export default {
 
     await this.questionStore.actionFetchAllCategories()
 
-    this.categories = this.questionStore.getCategories;
+    this.categories = this.questionStore.getCategories
   },
 }
 </script>
