@@ -46,7 +46,7 @@ const vuetify = createVuetify({
   },
 })
 
-app.user(pinia)
+app.use(pinia)
 app.use(vuetify)
 app.use(router)
 
