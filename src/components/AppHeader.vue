@@ -1,16 +1,7 @@
 <template>
   <v-app-bar class="navbar">
     <v-toolbar-title class="title" @click="toHome">
-      <v-row>
-        <v-col cols="1">
-          <v-img
-            :src="'@/assets/logo_single.svg'"
-            alt="TriviaMaster Logo"
-            height="50px"
-          ></v-img
-        ></v-col>
-        TriviaMaster
-      </v-row>
+      TriviaMaster
     </v-toolbar-title>
     <v-spacer />
     <v-btn size="large" to="/start-quiz" class="btn" color="primary"
@@ -43,7 +34,7 @@ export default {
   font-weight: bold;
 }
 .title.hover {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 .btn {
   font-size: 24px;
