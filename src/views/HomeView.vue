@@ -13,28 +13,22 @@
       </v-col>
     </v-row>
 
-    <!-- Popular Categories -->
+    <!-- Categories -->
     <v-row class="my-10">
       <v-col cols="12">
-        <h2 class="text-center my-5">Popular Categories</h2>
+        <h2 class="text-center my-5">Quiz Categories</h2>
       </v-col>
       <v-col
         cols="12"
-        sm="4"
+        sm="3"
         v-for="category in categories"
         :key="category.name"
       >
         <v-card :to="'/categories/' + category.id" class="category-card">
-          <v-img :src="category.image" height="500px" />
+          <v-img :src="category.image" height="400px" />
           <v-card-title>{{ category.name }}</v-card-title>
         </v-card>
       </v-col>
-      <v-row class="my-5" justify="center">
-        <v-btn size="x-large"
-          ><v-icon class="mr-2">mdi-arrow-right</v-icon>Explore all
-          Categories</v-btn
-        >
-      </v-row>
     </v-row>
 
     <!-- Features -->
@@ -65,6 +59,31 @@ export default {
         },
         {
           id: 3,
+          name: 'Sports',
+          image: 'https://loremflickr.com/g/800/500/sports',
+        },
+        {
+          id: 4,
+          name: 'Science',
+          image: 'https://loremflickr.com/g/800/500/science',
+        },
+        {
+          id: 5,
+          name: 'History',
+          image: 'https://loremflickr.com/g/800/500/history',
+        },
+        {
+          id: 6,
+          name: 'Sports',
+          image: 'https://loremflickr.com/g/800/500/sports',
+        },
+        {
+          id: 7,
+          name: 'History',
+          image: 'https://loremflickr.com/g/800/500/history',
+        },
+        {
+          id: 8,
           name: 'Sports',
           image: 'https://loremflickr.com/g/800/500/sports',
         },

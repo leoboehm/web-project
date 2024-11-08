@@ -4,10 +4,11 @@
       TriviaMaster
     </v-toolbar-title>
     <v-spacer />
-    <v-btn size="large" to="/start-quiz" class="btn" color="primary"
-      ><v-icon class="mr-2">mdi-arrow-right</v-icon>Start a random Quiz!</v-btn
+    <v-btn size="large" to="/start-quiz" color="primary"
+      ><v-icon class="mr-2">mdi-arrow-right</v-icon>Start random Quiz!</v-btn
     >
-    <v-btn size="large" to="/categories" class="btn">Categories</v-btn>
+    <v-btn size="large" to="/about">About</v-btn>
+    <v-btn size="large" to="/help">Help</v-btn>
   </v-app-bar>
 </template>
 
@@ -35,9 +36,5 @@ export default {
 }
 .title.hover {
   cursor: pointer !important;
-}
-.btn {
-  font-size: 24px;
-  size: 30px;
 }
 </style>
