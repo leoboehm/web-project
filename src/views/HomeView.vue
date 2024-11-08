@@ -7,7 +7,7 @@
         <p class="subtitle-1">
           Ready to test your skills? Start a quiz and see how you rank!
         </p>
-        <v-btn color="primary" size="x-large" to="/random-quiz" class="my-2"
+        <v-btn color="primary-darken-1" size="x-large" to="/random-quiz" class="my-2"
           >Start a Quiz</v-btn
         >
       </v-col>
@@ -25,7 +25,7 @@
         :key="category.name"
       >
         <v-card :to="'/categories/' + category.id" class="category-card">
-          <v-img :src="category.image" height="400px" />
+          <v-img :src="category.image" max-height="500px" />
           <v-card-title>{{ category.name }}</v-card-title>
         </v-card>
       </v-col>
@@ -112,7 +112,7 @@ export default {
 
 <style scoped>
 .hero-section {
-  background: linear-gradient(135deg, #3f51b5, #1e88e5);
+  background: linear-gradient(135deg, #388E3C, #8BC34A);
   color: white;
   padding: 40px 0;
   overflow-x: hidden;
