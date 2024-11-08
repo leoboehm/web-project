@@ -1,217 +1,224 @@
 {
-    "1": [
-      {
-        "question": "What is the chemical symbol for water?",
-        "options": ["H2O", "O2", "CO2"],
-        "answer": "H2O"
-      },
-      {
-        "question": "What planet is known as the Red Planet?",
-        "options": ["Earth", "Mars", "Jupiter"],
-        "answer": "Mars"
-      },
-      {
-        "question": "What gas do plants absorb from the atmosphere?",
-        "options": ["Oxygen", "Carbon Dioxide", "Nitrogen"],
-        "answer": "Carbon Dioxide"
-      },
-      {
-        "question": "What part of the cell contains genetic material?",
-        "options": ["Nucleus", "Mitochondria", "Cytoplasm"],
-        "answer": "Nucleus"
-      },
-      {
-        "question": "What is the hardest natural substance on Earth?",
-        "options": ["Gold", "Iron", "Diamond"],
-        "answer": "Diamond"
-      },
-      {
-        "question": "What is the speed of light?",
-        "options": ["300,000 km/s", "150,000 km/s", "75,000 km/s"],
-        "answer": "300,000 km/s"
-      }
-    ],
-    "2": [
-      {
-        "question": "Who was the first president of the United States?",
-        "options": ["Abraham Lincoln", "George Washington", "Thomas Jefferson"],
-        "answer": "George Washington"
-      },
-      {
-        "question": "In what year did World War II end?",
-        "options": ["1945", "1939", "1950"],
-        "answer": "1945"
-      },
-      {
-        "question": "Who was the Egyptian queen married to Julius Caesar?",
-        "options": ["Nefertiti", "Cleopatra", "Hatshepsut"],
-        "answer": "Cleopatra"
-      },
-      {
-        "question": "What empire was ruled by Genghis Khan?",
-        "options": ["Roman Empire", "Mongol Empire", "Ottoman Empire"],
-        "answer": "Mongol Empire"
-      },
-      {
-        "question": "Where was Napoleon Bonaparte born?",
-        "options": ["France", "Corsica", "Italy"],
-        "answer": "Corsica"
-      },
-      {
-        "question": "The Cold War was primarily between the United States and which other country?",
-        "options": ["China", "Soviet Union", "Germany"],
-        "answer": "Soviet Union"
-      }
-    ],
-    "3": [
-      {
-        "question": "What is the capital of France?",
-        "options": ["Berlin", "Madrid", "Paris"],
-        "answer": "Paris"
-      },
-      {
-        "question": "Which country has the largest population?",
-        "options": ["India", "China", "United States"],
-        "answer": "China"
-      },
-      {
-        "question": "What continent is the Sahara Desert located on?",
-        "options": ["Africa", "Asia", "Australia"],
-        "answer": "Africa"
-      },
-      {
-        "question": "What is the longest river in the world?",
-        "options": ["Amazon", "Nile", "Yangtze"],
-        "answer": "Nile"
-      },
-      {
-        "question": "Mount Everest is located in which mountain range?",
-        "options": ["Rockies", "Himalayas", "Andes"],
-        "answer": "Himalayas"
-      },
-      {
-        "question": "What is the smallest country in the world?",
-        "options": ["Monaco", "Malta", "Vatican City"],
-        "answer": "Vatican City"
-      }
-    ],
-    "4": [
-      {
-        "question": "Who wrote 'To Kill a Mockingbird'?",
-        "options": ["Harper Lee", "Mark Twain", "J.K. Rowling"],
-        "answer": "Harper Lee"
-      },
-      {
-        "question": "What is the title of the first Harry Potter book?",
-        "options": ["The Sorcerer's Stone", "The Chamber of Secrets", "The Goblet of Fire"],
-        "answer": "The Sorcerer's Stone"
-      },
-      {
-        "question": "Who wrote 'Pride and Prejudice'?",
-        "options": ["Charlotte Bronte", "Jane Austen", "George Eliot"],
-        "answer": "Jane Austen"
-      },
-      {
-        "question": "What is the real name of Mark Twain?",
-        "options": ["Samuel Clemens", "John Green", "Herman Melville"],
-        "answer": "Samuel Clemens"
-      },
-      {
-        "question": "Which Shakespeare play features the character 'Ophelia'?",
-        "options": ["Macbeth", "Hamlet", "Othello"],
-        "answer": "Hamlet"
-      },
-      {
-        "question": "Who is the author of '1984'?",
-        "options": ["George Orwell", "Aldous Huxley", "Ray Bradbury"],
-        "answer": "George Orwell"
-      }
-    ],
-    "5": [
-      {
-        "question": "Who is known as the 'King of Pop'?",
-        "options": ["Elvis Presley", "Michael Jackson", "Prince"],
-        "answer": "Michael Jackson"
-      },
-      {
-        "question": "In which TV show would you find the character 'Walter White'?",
-        "options": ["The Sopranos", "Breaking Bad", "Mad Men"],
-        "answer": "Breaking Bad"
-      },
-      {
-        "question": "Which singer performed 'Rolling in the Deep'?",
-        "options": ["Adele", "Beyonce", "Rihanna"],
-        "answer": "Adele"
-      },
-      {
-        "question": "Who directed 'Pulp Fiction'?",
-        "options": ["Steven Spielberg", "Martin Scorsese", "Quentin Tarantino"],
-        "answer": "Quentin Tarantino"
-      },
-      {
-        "question": "What year was the first iPhone released?",
-        "options": ["2005", "2007", "2010"],
-        "answer": "2007"
-      },
-      {
-        "question": "Which artist painted the Mona Lisa?",
-        "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci"],
-        "answer": "Leonardo da Vinci"
-      }
-    ],
-    "6": [
-      {
-        "question": "Who is known as the father of the computer?",
-        "options": ["Alan Turing", "Charles Babbage", "Bill Gates"],
-        "answer": "Charles Babbage"
-      },
-      {
-        "question": "What programming language is known as the language of the web?",
-        "options": ["Python", "HTML", "JavaScript"],
-        "answer": "JavaScript"
-      },
-      {
-        "question": "What is the main function of RAM in a computer?",
-        "options": ["Storage", "Processing", "Temporary memory"],
-        "answer": "Temporary memory"
-      },
-      {
-        "question": "Which company created the Android operating system?",
-        "options": ["Apple", "Microsoft", "Google"],
-        "answer": "Google"
-      },
-      {
-        "question": "What does 'HTTP' stand for?",
-        "options": ["HyperText Transfer Protocol", "HyperTransfer Text Program", "Hyperlink Transfer Protocol"],
-        "answer": "HyperText Transfer Protocol"
-      }
-    ],
-    "7": [
-      {
-        "question": "How many players are on a soccer team?",
-        "options": ["9", "10", "11"],
-        "answer": "11"
-      },
-      {
-        "question": "In tennis, what is the term for a score of zero?",
-        "options": ["Nil", "Love", "Void"],
-        "answer": "Love"
-      },
-      {
-        "question": "What sport is known as 'America's pastime'?",
-        "options": ["Football", "Basketball", "Baseball"],
-        "answer": "Baseball"
-      },
-      {
-        "question": "Who has won the most NBA championships as a player?",
-        "options": ["Kobe Bryant", "Michael Jordan", "Bill Russell"],
-        "answer": "Bill Russell"
-      },
-      {
-        "question": "What is the only country to have played in every single World Cup?",
-        "options": ["Brazil", "Argentina", "Germany"],
-        "answer": "Brazil"
-      }
-    ]
-  }
-  
+  "1": [
+    {
+      "question": "What is the chemical symbol for water?",
+      "options": ["H2O", "O2", "CO2"],
+      "answer": "H2O"
+    },
+    {
+      "question": "What planet is known as the Red Planet?",
+      "options": ["Earth", "Mars", "Jupiter"],
+      "answer": "Mars"
+    },
+    {
+      "question": "What gas do plants absorb from the atmosphere?",
+      "options": ["Oxygen", "Carbon Dioxide", "Nitrogen"],
+      "answer": "Carbon Dioxide"
+    },
+    {
+      "question": "What part of the cell contains genetic material?",
+      "options": ["Nucleus", "Mitochondria", "Cytoplasm"],
+      "answer": "Nucleus"
+    },
+    {
+      "question": "What is the hardest natural substance on Earth?",
+      "options": ["Gold", "Iron", "Diamond"],
+      "answer": "Diamond"
+    },
+    {
+      "question": "What is the speed of light?",
+      "options": ["300,000 km/s", "150,000 km/s", "75,000 km/s"],
+      "answer": "300,000 km/s"
+    }
+  ],
+  "2": [
+    {
+      "question": "Who was the first president of the United States?",
+      "options": ["Abraham Lincoln", "George Washington", "Thomas Jefferson"],
+      "answer": "George Washington"
+    },
+    {
+      "question": "In what year did World War II end?",
+      "options": ["1945", "1939", "1950"],
+      "answer": "1945"
+    },
+    {
+      "question": "Who was the Egyptian queen married to Julius Caesar?",
+      "options": ["Nefertiti", "Cleopatra", "Hatshepsut"],
+      "answer": "Cleopatra"
+    },
+    {
+      "question": "What empire was ruled by Genghis Khan?",
+      "options": ["Roman Empire", "Mongol Empire", "Ottoman Empire"],
+      "answer": "Mongol Empire"
+    },
+    {
+      "question": "Where was Napoleon Bonaparte born?",
+      "options": ["France", "Corsica", "Italy"],
+      "answer": "Corsica"
+    },
+    {
+      "question": "The Cold War was primarily between the United States and which other country?",
+      "options": ["China", "Soviet Union", "Germany"],
+      "answer": "Soviet Union"
+    }
+  ],
+  "3": [
+    {
+      "question": "What is the capital of France?",
+      "options": ["Berlin", "Madrid", "Paris"],
+      "answer": "Paris"
+    },
+    {
+      "question": "Which country has the largest population?",
+      "options": ["India", "China", "United States"],
+      "answer": "China"
+    },
+    {
+      "question": "What continent is the Sahara Desert located on?",
+      "options": ["Africa", "Asia", "Australia"],
+      "answer": "Africa"
+    },
+    {
+      "question": "What is the longest river in the world?",
+      "options": ["Amazon", "Nile", "Yangtze"],
+      "answer": "Nile"
+    },
+    {
+      "question": "Mount Everest is located in which mountain range?",
+      "options": ["Rockies", "Himalayas", "Andes"],
+      "answer": "Himalayas"
+    },
+    {
+      "question": "What is the smallest country in the world?",
+      "options": ["Monaco", "Malta", "Vatican City"],
+      "answer": "Vatican City"
+    }
+  ],
+  "4": [
+    {
+      "question": "Who wrote 'To Kill a Mockingbird'?",
+      "options": ["Harper Lee", "Mark Twain", "J.K. Rowling"],
+      "answer": "Harper Lee"
+    },
+    {
+      "question": "What is the title of the first Harry Potter book?",
+      "options": [
+        "The Sorcerer's Stone",
+        "The Chamber of Secrets",
+        "The Goblet of Fire"
+      ],
+      "answer": "The Sorcerer's Stone"
+    },
+    {
+      "question": "Who wrote 'Pride and Prejudice'?",
+      "options": ["Charlotte Bronte", "Jane Austen", "George Eliot"],
+      "answer": "Jane Austen"
+    },
+    {
+      "question": "What is the real name of Mark Twain?",
+      "options": ["Samuel Clemens", "John Green", "Herman Melville"],
+      "answer": "Samuel Clemens"
+    },
+    {
+      "question": "Which Shakespeare play features the character 'Ophelia'?",
+      "options": ["Macbeth", "Hamlet", "Othello"],
+      "answer": "Hamlet"
+    },
+    {
+      "question": "Who is the author of '1984'?",
+      "options": ["George Orwell", "Aldous Huxley", "Ray Bradbury"],
+      "answer": "George Orwell"
+    }
+  ],
+  "5": [
+    {
+      "question": "Who is known as the 'King of Pop'?",
+      "options": ["Elvis Presley", "Michael Jackson", "Prince"],
+      "answer": "Michael Jackson"
+    },
+    {
+      "question": "In which TV show would you find the character 'Walter White'?",
+      "options": ["The Sopranos", "Breaking Bad", "Mad Men"],
+      "answer": "Breaking Bad"
+    },
+    {
+      "question": "Which singer performed 'Rolling in the Deep'?",
+      "options": ["Adele", "Beyonce", "Rihanna"],
+      "answer": "Adele"
+    },
+    {
+      "question": "Who directed 'Pulp Fiction'?",
+      "options": ["Steven Spielberg", "Martin Scorsese", "Quentin Tarantino"],
+      "answer": "Quentin Tarantino"
+    },
+    {
+      "question": "What year was the first iPhone released?",
+      "options": ["2005", "2007", "2010"],
+      "answer": "2007"
+    },
+    {
+      "question": "Which artist painted the Mona Lisa?",
+      "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci"],
+      "answer": "Leonardo da Vinci"
+    }
+  ],
+  "6": [
+    {
+      "question": "Who is known as the father of the computer?",
+      "options": ["Alan Turing", "Charles Babbage", "Bill Gates"],
+      "answer": "Charles Babbage"
+    },
+    {
+      "question": "What programming language is known as the language of the web?",
+      "options": ["Python", "HTML", "JavaScript"],
+      "answer": "JavaScript"
+    },
+    {
+      "question": "What is the main function of RAM in a computer?",
+      "options": ["Storage", "Processing", "Temporary memory"],
+      "answer": "Temporary memory"
+    },
+    {
+      "question": "Which company created the Android operating system?",
+      "options": ["Apple", "Microsoft", "Google"],
+      "answer": "Google"
+    },
+    {
+      "question": "What does 'HTTP' stand for?",
+      "options": [
+        "HyperText Transfer Protocol",
+        "HyperTransfer Text Program",
+        "Hyperlink Transfer Protocol"
+      ],
+      "answer": "HyperText Transfer Protocol"
+    }
+  ],
+  "7": [
+    {
+      "question": "How many players are on a soccer team?",
+      "options": ["9", "10", "11"],
+      "answer": "11"
+    },
+    {
+      "question": "In tennis, what is the term for a score of zero?",
+      "options": ["Nil", "Love", "Void"],
+      "answer": "Love"
+    },
+    {
+      "question": "What sport is known as 'America's pastime'?",
+      "options": ["Football", "Basketball", "Baseball"],
+      "answer": "Baseball"
+    },
+    {
+      "question": "Who has won the most NBA championships as a player?",
+      "options": ["Kobe Bryant", "Michael Jordan", "Bill Russell"],
+      "answer": "Bill Russell"
+    },
+    {
+      "question": "What is the only country to have played in every single World Cup?",
+      "options": ["Brazil", "Argentina", "Germany"],
+      "answer": "Brazil"
+    }
+  ]
+}

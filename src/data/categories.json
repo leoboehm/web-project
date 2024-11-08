@@ -1,52 +1,52 @@
 {
-    "list": [
-        {
-            "id": 0,
-            "name": "General Knowledge",
-            "description": "Test your general knowledge with random questions from all categories!",
-            "img": ""
-        },
-        {
-            "id": 1,
-            "name": "Science",
-            "description": "Questions about physics, biology, chemistry, and space.",
-            "img": ""
-        },
-        {
-            "id": 2,
-            "name": "History",
-            "description": "Topics covering world history, famous events, and important figures.",
-            "img": ""
-        },
-        {
-            "id": 3,
-            "name": "Geography",
-            "description": "Includes countries, capitals, landmarks, and natural wonders.",
-            "img": ""
-        },
-        {
-            "id": 4,
-            "name": "Literature",
-            "description": "Focus on famous authors, books, and literary terms.",
-            "img": ""
-        },
-        {
-            "id": 5,
-            "name": "Pop Culture",
-            "description": "Movies, music, celebrities, and trends in entertainment.",
-            "img": ""
-        },
-        {
-            "id": 6,
-            "name": "Technology",
-            "description": "Innovations, tech companies, gadgets, and computing basics.",
-            "img": ""
-        },
-        {
-            "id": 7,
-            "name": "Sports",
-            "description": "Cover popular sports, athletes, teams, and major events.",
-            "img": ""
-        }
-    ]
+  "list": [
+    {
+      "id": 0,
+      "name": "General Knowledge",
+      "description": "Test your general knowledge with random questions from all categories!",
+      "img": "/img/general_knowledge.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Science",
+      "description": "Questions about physics, biology, chemistry, and space.",
+      "img": "/img/science.jpg"
+    },
+    {
+      "id": 2,
+      "name": "History",
+      "description": "Topics covering world history, famous events, and important figures.",
+      "img": "/img/history.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Geography",
+      "description": "Includes countries, capitals, landmarks, and natural wonders.",
+      "img": "/img/geography.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Literature",
+      "description": "Focus on famous authors, books, and literary terms.",
+      "img": "/img/literature.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Pop Culture",
+      "description": "Movies, music, celebrities, and trends in entertainment.",
+      "img": "/img/pop_culture.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Technology",
+      "description": "Innovations, tech companies, gadgets, and computing basics.",
+      "img": "/img/technology.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Sports",
+      "description": "Cover popular sports, athletes, teams, and major events.",
+      "img": "/img/sports.jpg"
+    }
+  ]
 }

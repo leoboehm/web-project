@@ -4,7 +4,7 @@
       TriviaMaster
     </v-toolbar-title>
     <v-spacer />
-    <v-btn size="large" to="/start-quiz" color="primary"
+    <v-btn size="large" to="/quiz" color="primary"
       ><v-icon class="mr-2">mdi-arrow-right</v-icon>Start random Quiz!</v-btn
     >
     <v-btn size="large" to="/about">About</v-btn>
