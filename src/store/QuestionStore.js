@@ -1,14 +1,10 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia'
 
 export const QuestionStore = defineStore('QuestionStore', {
-    state: () => ({
-        questions: [],
-        categories: []
-    }),
-    getters: {
-
-    },
-    actions: {
-        
-    }
+  state: () => ({
+    questions: [],
+    categories: [],
+  }),
+  getters: {},
+  actions: {},
 })
