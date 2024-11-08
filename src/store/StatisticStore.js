@@ -1,8 +1,7 @@
 import { defineStore } from 'pinia'
 
 export const StatisticStore = defineStore('StatisticStore', {
-  state: () => ({
-  }),
+  state: () => ({}),
   getters: {},
   actions: {},
 })
