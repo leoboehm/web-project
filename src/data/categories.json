@@ -1,0 +1,52 @@
+{
+    "list": [
+        {
+            "id": 0,
+            "name": "General Knowledge",
+            "description": "Test your general knowledge with random questions from all categories!",
+            "img": ""
+        },
+        {
+            "id": 1,
+            "name": "Science",
+            "description": "Questions about physics, biology, chemistry, and space.",
+            "img": ""
+        },
+        {
+            "id": 2,
+            "name": "History",
+            "description": "Topics covering world history, famous events, and important figures.",
+            "img": ""
+        },
+        {
+            "id": 3,
+            "name": "Geography",
+            "description": "Includes countries, capitals, landmarks, and natural wonders.",
+            "img": ""
+        },
+        {
+            "id": 4,
+            "name": "Literature",
+            "description": "Focus on famous authors, books, and literary terms.",
+            "img": ""
+        },
+        {
+            "id": 5,
+            "name": "Pop Culture",
+            "description": "Movies, music, celebrities, and trends in entertainment.",
+            "img": ""
+        },
+        {
+            "id": 6,
+            "name": "Technology",
+            "description": "Innovations, tech companies, gadgets, and computing basics.",
+            "img": ""
+        },
+        {
+            "id": 7,
+            "name": "Sports",
+            "description": "Cover popular sports, athletes, teams, and major events.",
+            "img": ""
+        }
+    ]
+}
