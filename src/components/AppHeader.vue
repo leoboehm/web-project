@@ -1,8 +1,17 @@
 <template>
   <v-app-bar class="navbar">
-    <v-toolbar-title class="title" @click="toHome"
-      >TriviaMaster</v-toolbar-title
-    >
+    <v-toolbar-title class="title" @click="toHome">
+      <v-row>
+        <v-col cols="1">
+          <v-img
+            :src="'@/assets/logo_single.svg'"
+            alt="TriviaMaster Logo"
+            height="50px"
+          ></v-img
+        ></v-col>
+        TriviaMaster
+      </v-row>
+    </v-toolbar-title>
     <v-spacer />
     <v-btn size="large" to="/start-quiz" class="btn" color="primary"
       ><v-icon class="mr-2">mdi-arrow-right</v-icon>Start a random Quiz!</v-btn
@@ -13,6 +22,10 @@
 
 <script>
 export default {
+  name: 'AppHeader',
+  data() {
+    return {}
+  },
   methods: {
     toHome() {
       this.$router.push({ name: 'home' })
