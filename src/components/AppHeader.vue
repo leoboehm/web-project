@@ -9,6 +9,7 @@
     >
     <v-btn size="large" to="/about">About</v-btn>
     <v-btn size="large" to="/help">Help</v-btn>
+    <v-btn icon @click="toggleTheme"><v-icon>mdi-brightness-6</v-icon></v-btn>
   </v-app-bar>
 </template>
 
@@ -18,7 +19,11 @@ export default {
   data() {
     return {}
   },
-  methods: {},
+  methods: {
+    toggleTheme() {
+      this.$emit("toggleTheme")
+    }
+  },
 }
 </script>
 
