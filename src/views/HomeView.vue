@@ -8,7 +8,7 @@
           Ready to test your skills? Start a quiz and see how you rank!
         </p>
         <v-btn color="primary-darken-1" size="x-large" to="/quiz" class="my-2"
-          >Start a Quiz</v-btn
+          >START A QUIZ</v-btn
         >
       </v-col>
     </v-row>

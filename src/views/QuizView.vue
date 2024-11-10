@@ -90,7 +90,7 @@
                       color="primary"
                       @click="e1++"
                     >
-                      Next
+                      Next Question<v-icon class="ml-2">mdi-arrow-right-thick</v-icon>
                     </v-btn>
                     <v-btn
                       :disabled="userAnswers[index] == undefined"
@@ -100,6 +100,7 @@
                       @click="endQuiz"
                     >
                       End Quiz
+                      <v-icon class="ml-2">mdi-check-bold</v-icon>
                     </v-btn>
                   </v-card-actions>
                 </v-card>

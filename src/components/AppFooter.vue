@@ -26,8 +26,8 @@ export default {
     links: [
       { name: 'Home', url: '/' },
       { name: 'About TriviaMaster', url: '/about' },
-      { name: 'help', url: '/help' },
-      { name: 'contact', url: '/help#contact' },
+      { name: 'Help', url: '/help' },
+      { name: 'Contact', url: '/help#contact' },
     ],
   }),
 }

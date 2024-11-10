@@ -5,7 +5,7 @@
     </v-btn>
     <v-spacer />
     <v-btn size="large" to="/quiz" color="primary" :active="false"
-      ><v-icon class="mr-2">mdi-arrow-right</v-icon>Start a Quiz!</v-btn
+      ><v-icon class="mr-2">mdi-arrow-right-thick</v-icon>Start a Quiz!</v-btn
     >
     <v-btn size="large" to="/about" :active="false">About</v-btn>
     <v-btn size="large" to="/help" :active="false">Help</v-btn>

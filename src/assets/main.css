@@ -17,3 +17,7 @@ a,
     background-color: hsla(123, 38%, 57%, 0.3);
   }
 }
+
+.v-btn {
+  text-transform: none!important;
+}
