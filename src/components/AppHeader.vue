@@ -1,14 +1,14 @@
 <template>
   <v-app-bar class="navbar">
-    <v-btn size="large" to="/">
+    <v-btn size="large" to="/" :active="false">
       <v-toolbar-title class="title">TriviaMaster</v-toolbar-title>
     </v-btn>
     <v-spacer />
-    <v-btn size="large" to="/quiz" color="primary"
+    <v-btn size="large" to="/quiz" color="primary" :active="false"
       ><v-icon class="mr-2">mdi-arrow-right</v-icon>Start a Quiz!</v-btn
     >
-    <v-btn size="large" to="/about">About</v-btn>
-    <v-btn size="large" to="/help">Help</v-btn>
+    <v-btn size="large" to="/about" :active="false">About</v-btn>
+    <v-btn size="large" to="/help" :active="false">Help</v-btn>
     <v-tooltip text="Toggle dark/light theme"
       ><template v-slot:activator="{ props }">
         <v-btn icon @click="toggleTheme" v-bind="props"

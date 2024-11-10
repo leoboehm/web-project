@@ -9,6 +9,7 @@
         rounded="xl"
         variant="text"
         :to="link.url"
+        :active="false"
       >
         {{ link.name }}
       </v-btn>
