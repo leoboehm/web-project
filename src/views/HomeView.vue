@@ -35,14 +35,11 @@
 <script>
 import CategorySelection from '@/components/CategorySelection.vue'
 
-import { useQuestionStore } from '@/store/QuestionStore'
-
 export default {
   name: 'HomeView',
   components: { CategorySelection },
   data() {
     return {
-      questionStore: undefined,
       // features: [
       //   {
       //     icon: 'mdi-trophy',
@@ -61,12 +58,6 @@ export default {
       //   },
       // ],
     }
-  },
-
-  async beforeMount() {
-    this.questionStore = useQuestionStore()
-
-    await this.questionStore.actionFetchAllCategories()
   },
 }
 </script>

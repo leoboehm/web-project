@@ -13,9 +13,24 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 
+import { useQuestionStore } from '@/store/QuestionStore'
+
 export default {
+  name: "App",
   components: {
     AppHeader,
+  },
+  
+  data() {
+    return {
+      questionStore: undefined
+    }
+  },
+
+  async beforeMount() {
+    this.questionStore = useQuestionStore()
+
+    await this.questionStore.actionFetchAllCategories()
   },
 }
 </script>
