@@ -2,7 +2,9 @@
   <v-container fluid>
     <v-row v-if="questionStore.getSelectedCategory == undefined">
       <v-col cols="12">
-        <h2 class="text-h4 text-center my-5">Select a category to start a quiz!</h2>
+        <h2 class="text-h4 text-center my-5">
+          Select a category to start a quiz!
+        </h2>
       </v-col>
       <CategorySelection />
     </v-row>

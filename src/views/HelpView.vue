@@ -9,7 +9,11 @@
           >
           <v-card-text>
             <v-expansion-panels>
-              <v-expansion-panel v-for="(faq, index) in faqs" :key="index" class="my-1">
+              <v-expansion-panel
+                v-for="(faq, index) in faqs"
+                :key="index"
+                class="my-1"
+              >
                 <v-expansion-panel-title class="text-h6 text-primary">{{
                   faq.question
                 }}</v-expansion-panel-title>
@@ -30,7 +34,10 @@
           <v-card-title class="text-h4 text-center mb-4"
             >Contact Us</v-card-title
           >
-          <v-card-subtitle class="text-h6 text-primary">If you have any further questions, suggestions or feedback, we're happy to receive your message!</v-card-subtitle>
+          <v-card-subtitle class="text-h6 text-primary"
+            >If you have any further questions, suggestions or feedback, we're
+            happy to receive your message!</v-card-subtitle
+          >
           <v-card-text>
             <v-form
               ref="contactForm"
@@ -62,15 +69,16 @@
               ></v-textarea>
 
               <v-row class="px-3">
-              <v-spacer />
-              <v-btn
-                color="primary"
-                class="mt-4"
-                size="large"
-                type="submit"
-                :disabled="!formValid"
-                >Submit</v-btn
-              ></v-row>
+                <v-spacer />
+                <v-btn
+                  color="primary"
+                  class="mt-4"
+                  size="large"
+                  type="submit"
+                  :disabled="!formValid"
+                  >Submit</v-btn
+                ></v-row
+              >
             </v-form>
           </v-card-text>
         </v-card>
@@ -116,7 +124,7 @@ export default {
   methods: {
     submitForm() {
       if (this.formValid) {
-        alert("Contact message sent.")
+        alert('Contact message sent.')
         this.resetForm()
       }
     },
@@ -132,7 +140,7 @@ export default {
 </script>
 
 <style scoped>
-.panel-text{
+.panel-text {
   font-size: 16px;
 }
 </style>

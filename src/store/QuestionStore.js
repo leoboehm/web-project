@@ -16,10 +16,13 @@ export const useQuestionStore = defineStore('QuestionStore', {
   actions: {
     async actionFetchAllCategories() {
       this.categories = categories.list
-      this.selectedCategory = undefined
+      this.actionClearSelectedCategory()
     },
     async actionFetchAllQuestions() {
       this.questions = questions
+    },
+    actionClearSelectedCategory() {
+      this.selectedCategory = undefined
     },
     actionSetSelectedCategoryById(categoryId) {
       this.selectedCategory = this.categories.filter(

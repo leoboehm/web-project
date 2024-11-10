@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import { useQuestionStore } from '@/store/QuestionStore'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,15 @@ const router = createRouter({
     // scroll to the top of the page
     return { top: 0 }
   },
+})
+
+router.beforeEach((to, from) => {
+  const questionStore = useQuestionStore()
+  if (to.name != 'quiz') {
+    questionStore.actionClearSelectedCategory()
+  }
+
+  return
 })
 
 export default router
