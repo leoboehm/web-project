@@ -9,7 +9,13 @@
     >
     <v-btn size="large" to="/about">About</v-btn>
     <v-btn size="large" to="/help">Help</v-btn>
-    <v-btn icon @click="toggleTheme"><v-icon>mdi-brightness-6</v-icon></v-btn>
+    <v-tooltip text="Toggle dark/light theme"
+      ><template v-slot:activator="{ props }">
+        <v-btn icon @click="toggleTheme" v-bind="props"
+          ><v-icon>mdi-brightness-6</v-icon></v-btn
+        ></template
+      ></v-tooltip
+    >
   </v-app-bar>
 </template>
 
@@ -21,8 +27,8 @@ export default {
   },
   methods: {
     toggleTheme() {
-      this.$emit("toggleTheme")
-    }
+      this.$emit('toggleTheme')
+    },
   },
 }
 </script>

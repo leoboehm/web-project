@@ -17,7 +17,7 @@ import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 
 import { useQuestionStore } from '@/store/QuestionStore'
-import { useTheme } from 'vuetify/lib/framework.mjs';
+import { useTheme } from 'vuetify/lib/framework.mjs'
 
 export default {
   name: 'App',
@@ -29,7 +29,7 @@ export default {
   data() {
     return {
       questionStore: undefined,
-      theme: undefined
+      theme: undefined,
     }
   },
 
@@ -42,9 +42,12 @@ export default {
 
   methods: {
     toggleTheme() {
-      this.theme.global.name = this.theme.global.name == 'customDarkTheme' ? 'customLightTheme' : 'customDarkTheme'
-    }
-  }
+      this.theme.global.name =
+        this.theme.global.name == 'customDarkTheme'
+          ? 'customLightTheme'
+          : 'customDarkTheme'
+    },
+  },
 }
 </script>
 
