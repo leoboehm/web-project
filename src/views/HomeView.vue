@@ -3,8 +3,8 @@
     <!-- Hero Section -->
     <v-row class="hero-section" justify="center">
       <v-col cols="12" md="6" class="text-center">
-        <h1 class="display-2 font-weight-bold">Challenge Your Knowledge</h1>
-        <p class="subtitle-1">
+        <h1 class="text-h3 font-weight-bold">Challenge Your Knowledge</h1>
+        <p class="text-h5 my-2 text-black">
           Ready to test your skills? Start a quiz and see how you rank!
         </p>
         <v-btn color="primary-darken-1" size="x-large" to="/quiz" class="my-2"
@@ -16,7 +16,7 @@
     <!-- Categories -->
     <v-row class="my-10">
       <v-col cols="12">
-        <h2 class="text-center my-5">Quiz Categories</h2>
+        <h2 class="text-h4 text-center my-5">Quiz Categories</h2>
       </v-col>
       <CategorySelection />
     </v-row>
