@@ -60,9 +60,13 @@
               <a href="https://loremflickr.com">Lorem Flickr</a>.
             </p>
             <p>
-              Contents of About and Help page, as well as questions and answer
-              options in quizzes are generated with
+              Contents of About and Help page are generated with
               <a href="https://chatgpt.com">ChatGPT</a>.
+            </p>
+            <p>
+              The quiz questions and answer options are generated with
+              <a href="https://chatgpt.com">ChatGPT</a> and
+              <a href="https://inference.cerebras.ai/">cerebras inference</a>.
             </p>
             <p>All rights reserved.</p>
           </v-card-text>
