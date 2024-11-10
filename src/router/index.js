@@ -25,6 +25,14 @@ const router = createRouter({
       component: () => import('../views/QuizView.vue'),
     },
   ],
+  scrollBehavior(to) {
+    // if there's a hash, scroll to the element with that id
+    if (to.hash) {
+      return { el: to.hash, behavior: 'smooth' };
+    }
+    // scroll to the top of the page
+    return { top: 0 };
+  }
 })
 
 export default router
