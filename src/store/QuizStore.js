@@ -18,6 +18,8 @@ export const useQuizStore = defineStore('QuizStore', {
       this.questionStore = useQuestionStore()
       this.questionSet =
         await this.questionStore.actionGetQuestionSetByCategoryId(categoryId)
+      this.answerSet = []
+      this.correctAnswerCount = 0
       this.questionSet.forEach(item => this.answerSet.push(item.answer))
     },
     async actionCalcCorrectAnswerCount(userAnswers) {

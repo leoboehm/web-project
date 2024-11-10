@@ -14,7 +14,12 @@
         <v-col cols="12" md="8">
           <!-- Start Quiz -->
           <v-card flat v-if="!(quizStarted || quizEnded)">
-            <v-card-actions><v-btn color="primary" @click="changeCategory"><v-icon class="mr-2" color="primary">mdi-arrow-left-top</v-icon>Change Category</v-btn></v-card-actions>
+            <v-card-actions
+              ><v-btn color="primary" @click="changeCategory"
+                ><v-icon class="mr-2" color="primary">mdi-arrow-left-top</v-icon
+                >Change Category</v-btn
+              ></v-card-actions
+            >
             <v-card-title class="text-h4"
               >Category:
               {{ categoryStore.getSelectedCategory.name }}</v-card-title
@@ -72,7 +77,9 @@
                 :value="index + 1"
               >
                 <v-card flat>
-                  <v-card-title>{{ question.question }}</v-card-title>
+                  <v-card-text class="text-h5">{{
+                    question.question
+                  }}</v-card-text>
                   <v-radio-group v-model="userAnswers[index]" :key="index" row>
                     <v-radio
                       v-for="(option, optionIndex) in question.options"
@@ -90,7 +97,9 @@
                       color="primary"
                       @click="e1++"
                     >
-                      Next Question<v-icon class="ml-2">mdi-arrow-right-thick</v-icon>
+                      Next Question<v-icon class="ml-2"
+                        >mdi-arrow-right-thick</v-icon
+                      >
                     </v-btn>
                     <v-btn
                       :disabled="userAnswers[index] == undefined"
@@ -208,16 +217,21 @@ export default {
       this.quizStarted = false
     },
     newQuiz() {
+      this.resetValues()
       this.categoryStore.actionClearSelectedCategory()
-      this.$router.push({name: "quiz"})
+      this.$router.push({ name: 'quiz' })
+    },
+    resetValues() {
+      this.e1 = 1
+      this.quizEnded = false
+      this.quizStarted = false
+      this.userAnswers = []
     },
     correctAnswer(index) {
-      if (this.e1 > index + 1) {
-        if (this.quizStore.getAnswerSet[index] == this.userAnswers[index]) {
-          return true
-        }
-        return false
+      if (this.quizStore.getAnswerSet[index] == this.userAnswers[index]) {
+        return true
       }
+      return false
     },
   },
 }
