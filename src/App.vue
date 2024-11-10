@@ -7,23 +7,27 @@
         <RouterView />
       </v-container>
     </v-main>
+
+    <AppFooter />
   </v-app>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue'
+import AppFooter from './components/AppFooter.vue'
 
 import { useQuestionStore } from '@/store/QuestionStore'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     AppHeader,
+    AppFooter,
   },
-  
+
   data() {
     return {
-      questionStore: undefined
+      questionStore: undefined,
     }
   },
 
