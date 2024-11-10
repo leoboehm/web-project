@@ -2,22 +2,22 @@
   <v-container fluid>
     <v-row v-if="questionStore.getSelectedCategory == undefined">
       <v-col cols="12">
-        <h2 class="text-center my-5">Select a category to start a quiz!</h2>
+        <h2 class="text-h4 text-center my-5">Select a category to start a quiz!</h2>
       </v-col>
       <CategorySelection />
     </v-row>
 
     <template v-else>
       <v-card flat v-if="quizStart">
-        <v-card-title
+        <v-card-title class="text-h4"
           >Category: {{ questionStore.getSelectedCategory.name }}</v-card-title
         >
         <v-img
           :src="questionStore.getSelectedCategory.img"
           max-width="500px"
-          class="ma-2"
+          class="ma-4"
         ></v-img>
-        <v-card-subtitle>{{
+        <v-card-subtitle class="text-h6">{{
           questionStore.getSelectedCategory.description
         }}</v-card-subtitle>
         <div class="pa-4">

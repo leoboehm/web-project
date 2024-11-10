@@ -25,24 +25,24 @@
             <v-divider class="my-4"></v-divider>
 
             <h5 class="text-h5 mt-4">Key Features</h5>
-            <ul class="feature-list mt-1">
-              <li>
+            <v-list>
+              <v-list-item class="list-item">
                 <v-icon color="secondary" class="mr-2">mdi-book</v-icon> A wide
                 range of categories to choose from
-              </li>
-              <li>
+              </v-list-item>
+              <v-list-item class="list-item">
                 <v-icon color="secondary" class="mr-2">mdi-help</v-icon>
                 Randomized questions to keep things fresh
-              </li>
-              <li>
+              </v-list-item>
+              <v-list-item class="list-item">
                 <v-icon color="secondary" class="mr-2">mdi-lightbulb</v-icon>
                 Track your progress and improve over time
-              </li>
-              <li>
+              </v-list-item>
+              <v-list-item class="list-item">
                 <v-icon color="secondary" class="mr-2">mdi-star</v-icon>
                 Beautiful, responsive design built with Vue and Vuetify
-              </li>
-            </ul>
+              </v-list-item>
+            </v-list>
 
             <v-divider class="my-4"></v-divider>
 
@@ -60,8 +60,8 @@
               <a href="https://loremflickr.com">Lorem Flickr</a>.
             </p>
             <p>
-              About page text, as well as questions and answer options are
-              generated with
+              Contents of About and Help page, as well as questions and answer
+              options in quizzes are generated with
               <a href="https://chatgpt.com">ChatGPT</a>.
             </p>
             <p>All rights reserved.</p>
@@ -73,15 +73,7 @@
 </template>
 
 <style scoped>
-.feature-list {
-  padding-left: 16px;
-  list-style: none;
-}
-
-.feature-list li {
-  margin-bottom: 8px;
+.list-item {
   font-size: 16px;
-  display: flex;
-  align-items: center;
 }
 </style>
