@@ -11,27 +11,27 @@
 </template>
 
 <script>
-import { useQuestionStore } from '@/store/QuestionStore'
+import { useCategoryStore } from '@/store/CategoryStore'
 
 export default {
   name: 'CategorySelection',
 
   data() {
     return {
-      questionStore: undefined,
+      categoryStore: undefined,
       categories: [],
     }
   },
 
   async beforeMount() {
-    this.questionStore = useQuestionStore()
+    this.categoryStore = useCategoryStore()
 
-    this.categories = this.questionStore.getCategories
+    this.categories = this.categoryStore.getCategories
   },
 
   methods: {
     categorySelection(categoryId) {
-      this.questionStore.actionSetSelectedCategoryById(categoryId)
+      this.categoryStore.actionSetSelectedCategoryById(categoryId)
 
       this.$router.push({ name: 'quiz' })
     },

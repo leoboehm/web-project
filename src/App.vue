@@ -16,7 +16,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 
-import { useQuestionStore } from '@/store/QuestionStore'
+import { useCategoryStore } from '@/store/CategoryStore'
 import { useTheme } from 'vuetify/lib/framework.mjs'
 
 export default {
@@ -28,16 +28,16 @@ export default {
 
   data() {
     return {
-      questionStore: undefined,
+      categoryStore: undefined,
       theme: undefined,
     }
   },
 
   async beforeMount() {
-    this.questionStore = useQuestionStore()
+    this.categoryStore = useCategoryStore()
     this.theme = useTheme()
 
-    await this.questionStore.actionFetchAllCategories()
+    await this.categoryStore.actionFetchAllCategories()
   },
 
   methods: {

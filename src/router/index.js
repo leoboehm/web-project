@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import { useQuestionStore } from '@/store/QuestionStore'
+import { useCategoryStore } from '@/store/CategoryStore'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,9 +37,9 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from) => {
-  const questionStore = useQuestionStore()
+  const categoryStore = useCategoryStore()
   if (to.name != 'quiz') {
-    questionStore.actionClearSelectedCategory()
+    categoryStore.actionClearSelectedCategory()
   }
 
   return
