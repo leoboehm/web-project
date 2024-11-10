@@ -6,10 +6,12 @@ export const useQuizStore = defineStore('QuizStore', {
     questionStore: undefined,
     questionSet: [],
     answerSet: [],
+    correctAnswerCount: 0,
   }),
   getters: {
     getQuestionSet: state => state.questionSet,
     getAnswerSet: state => state.answerSet,
+    getCorrectAnswerCount: state => state.correctAnswerCount,
   },
   actions: {
     async actionLoadQuestionSet(categoryId) {
@@ -18,16 +20,12 @@ export const useQuizStore = defineStore('QuizStore', {
         await this.questionStore.actionGetQuestionSetByCategoryId(categoryId)
       this.questionSet.forEach(item => this.answerSet.push(item.answer))
     },
-    async actionGetCorrectAnswerCount(userAnswers) {
-      let correctAnswerCount = 0
-
+    async actionCalcCorrectAnswerCount(userAnswers) {
       for (let i = 0; i < this.answerSet.length; i++) {
         if (this.answerSet[i] == userAnswers[i]) {
-          correctAnswerCount++
+          this.correctAnswerCount++
         }
       }
-
-      return correctAnswerCount
     },
   },
 })

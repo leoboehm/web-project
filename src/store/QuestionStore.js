@@ -37,8 +37,8 @@ export const useQuestionStore = defineStore('QuestionStore', {
             questionPool[i],
           ]
         }
-        // return the first 20 questions
-        return questionPool.slice(0, 20)
+        // return the first 15 questions
+        return questionPool.slice(0, 15)
       }
     },
   },

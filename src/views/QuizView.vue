@@ -12,7 +12,9 @@
     <template v-else>
       <v-row class="justify-center">
         <v-col cols="12" md="8">
+          <!-- Start Quiz -->
           <v-card flat v-if="!(quizStarted || quizEnded)">
+            <v-card-actions><v-btn color="primary" @click="changeCategory"><v-icon class="mr-2" color="primary">mdi-arrow-left-top</v-icon>Change Category</v-btn></v-card-actions>
             <v-card-title class="text-h4"
               >Category:
               {{ categoryStore.getSelectedCategory.name }}</v-card-title
@@ -26,7 +28,7 @@
               categoryStore.getSelectedCategory.description
             }}</v-card-subtitle>
             <div class="pa-4">
-              <h2 class="text-right">
+              <h2 class="text-right text-secondary">
                 Are you ready? Click the button below to start the Quiz!
               </h2>
               <v-row class="mt-3">
@@ -38,6 +40,7 @@
             </div>
           </v-card>
 
+          <!-- Questions -->
           <v-stepper v-if="quizStarted" v-model="e1">
             <v-stepper-header>
               <template v-for="(question, index) in questionPool" :key="index">
@@ -93,16 +96,55 @@
                       :disabled="userAnswers[index] == undefined"
                       size="large"
                       v-if="index === questionPool.length - 1"
-                      color="success"
-                      @click="submitQuiz"
+                      color="primary"
+                      @click="endQuiz"
                     >
-                      Submit Quiz
+                      End Quiz
                     </v-btn>
                   </v-card-actions>
                 </v-card>
               </v-stepper-window-item>
             </v-stepper-window>
           </v-stepper>
+
+          <!-- Results -->
+          <v-card flat v-if="quizEnded">
+            <v-card-title class="text-h4 text-center">Summary</v-card-title>
+            <v-card-subtitle class="text-h6 text-center"
+              >Category:
+              {{ categoryStore.getSelectedCategory.name }}</v-card-subtitle
+            >
+            <div class="pa-4 text-center">
+              <h2 class="mb-4">Here are your results:</h2>
+              <v-progress-linear
+                :model-value="quizStore.getCorrectAnswerCount"
+                color="secondary"
+                bg-color="error"
+                rounded
+                height="20"
+                :max="questionPool.length"
+              ></v-progress-linear>
+              <p class="text-h6 text-secondary my-2">
+                You correctly answered {{ quizStore.getCorrectAnswerCount }}/{{
+                  questionPool.length
+                }}
+                questions!
+              </p>
+              <p v-if="quizStore.getCorrectAnswerCount != questionPool.length">
+                Keep going to improve your knowledge in
+                {{ categoryStore.getSelectedCategory.name }} and reach 100%!
+              </p>
+              <p v-else>
+                Congratulations! You mastered the category
+                {{ categoryStore.getSelectedCategory.name }} and reached 100%!
+              </p>
+              <v-divider class="mt-6"></v-divider>
+              <h2 class="mb-4 mt-6">Ready for the next round?</h2>
+              <v-btn @click="newQuiz" color="primary" size="large"
+                >Start new Quiz!</v-btn
+              >
+            </div>
+          </v-card>
         </v-col>
       </v-row>
     </template>
@@ -145,6 +187,9 @@ export default {
   },
 
   methods: {
+    changeCategory() {
+      this.newQuiz()
+    },
     async startQuiz() {
       await this.quizStore.actionLoadQuestionSet(
         this.categoryStore.getSelectedCategory.id,
@@ -156,12 +201,22 @@ export default {
         this.quizEnded = false
       }
     },
+    async endQuiz() {
+      await this.quizStore.actionCalcCorrectAnswerCount(this.userAnswers)
+      this.quizEnded = true
+      this.quizStarted = false
+    },
+    newQuiz() {
+      this.categoryStore.actionClearSelectedCategory()
+      this.$router.push({name: "quiz"})
+    },
     correctAnswer(index) {
-      console.debug(this.quizStore.getAnswerSet)
-      if (this.quizStore.getAnswerSet[index] == this.userAnswers[index]) {
-        return true
+      if (this.e1 > index + 1) {
+        if (this.quizStore.getAnswerSet[index] == this.userAnswers[index]) {
+          return true
+        }
+        return false
       }
-      return false
     },
   },
 }
