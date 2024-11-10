@@ -18,20 +18,7 @@
       <v-col cols="12">
         <h2 class="text-center my-5">Quiz Categories</h2>
       </v-col>
-      <v-col
-        cols="12"
-        sm="3"
-        v-for="category in categories"
-        :key="category.name"
-      >
-        <v-card :to="'/categories/' + category.id" class="category-card">
-          <v-img :src="category.img" max-height="500px" />
-          <div class="overlay">
-            <p class="pa-3">{{ category.description }}</p>
-          </div>
-          <v-card-title class="card-title">{{ category.name }}</v-card-title>
-        </v-card>
-      </v-col>
+      <CategorySelection />
     </v-row>
 
     <!-- Features -->
@@ -46,13 +33,16 @@
 </template>
 
 <script>
+import CategorySelection from '@/components/CategorySelection.vue'
+
 import { useQuestionStore } from '@/store/QuestionStore'
 
 export default {
+  name: 'HomeView',
+  components: { CategorySelection },
   data() {
     return {
       questionStore: undefined,
-      categories: [],
       // features: [
       //   {
       //     icon: 'mdi-trophy',
@@ -77,8 +67,6 @@ export default {
     this.questionStore = useQuestionStore()
 
     await this.questionStore.actionFetchAllCategories()
-
-    this.categories = this.questionStore.getCategories
   },
 }
 </script>
@@ -90,33 +78,7 @@ export default {
   padding: 40px 0;
   overflow-x: hidden;
 }
-.category-card {
-  transition: transform 0.2s;
-}
-.category-card:hover {
-  transform: scale(1.05);
-}
-.card-title {
-  background-color: #388e3c;
-}
 .features {
   text-align: center;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: hsla(125, 40%, 6%, 0.8);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  color: #fff;
-}
-.category-card:hover .overlay {
-  opacity: 1;
 }
 </style>

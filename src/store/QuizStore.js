@@ -1,7 +1,9 @@
 import { defineStore } from 'pinia'
 
 export const QuizStore = defineStore('QuizStore', {
-  state: () => ({}),
+  state: () => ({
+    questionSet: [],
+  }),
   getters: {},
   actions: {},
 })
