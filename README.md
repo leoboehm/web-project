@@ -1,16 +1,9 @@
-# web-project
+# TriviaMaster Quiz Website
+**TriviaMaster is a quiz website where users can test their knowledge in various categories.** <br><br>
+## Design Document
+The design document for this project can be found [here](https://docs.google.com/document/d/1W9Cf1e8t1qX-pEsmJM8EjdCbqPqOvymKfxUeBr6FWV4/edit?usp=sharing).
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Setup
 
 ```sh
 npm install
@@ -21,15 +14,5 @@ npm install
 ```sh
 npm run dev
 ```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+<hr><br>
+Web Engineering Project by Leonie Böhm (Informatics - New Study, Semester I).
