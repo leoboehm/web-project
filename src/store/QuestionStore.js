@@ -15,14 +15,15 @@ export const useQuestionStore = defineStore('QuestionStore', {
     async actionGetQuestionSetByCategoryId(categoryId) {
       let questionPool = []
       if (categoryId == 0) {
-        // return random questions from all categories
-        this.questions.forEach(category =>
-          questionPool.push(questions[category]),
-        )
+        // return questions from all categories
+        for(let category in this.questions){
+          questionPool = questionPool.concat(this.questions[category])
+        }
       } else {
-        // return random questions by category
+        // return questions by category
         questionPool = this.questions[categoryId]
       }
+      // return random questions from filtered list
       return this.getRandomQuestions(questionPool)
     },
 
